@@ -1,0 +1,98 @@
+/* App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+
+.App {
+  height: 100%;
+  background-image: url('/images/background.png');
+  background-size: cover; /* Cover the entire area */
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  font-size: 2rem;
+  flex-direction: column;
+  position: relative;
+}
+.animation-container {
+  position: absolute;
+  bottom: 860px; /* Position from bottom */
+  right: 1100px; /* Position from right */
+  width: 70px; /* Adjust width as needed */
+  height: 70px; /* Adjust height as needed */
+   /* Ensure it's behind other content */
+  opacity: 0.3; /* Adjust opacity as needed */
+  z-index: 1;
+}
+.App-logo {
+  font-size: 100px;
+  
+  margin-bottom: -1.2rem;
+  position: relative; /* Needed for z-index to work correctly */
+  z-index: 8; /* Higher z-index to be on top of the animation */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 0; /* for semi-bold */
+  letter-spacing: 5px;
+}
+.App p {
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter; /* for normal */
+  position: relative; /* Establish a stacking context */
+  z-index: 8; /* Ensure it's above the animation container */
+  letter-spacing: 5px;
+}
+
+input[type="text"] {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: white;
+  width: 600px;
+  z-index: 8;
+  background-image: url("/images/gradient.png");
+  background-size: contain;
+  background-size: contain;
+}
+
+input[type="text"]::placeholder {
+  color: white; /* This will change the placeholder text color to white */
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #667eea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  z-index: 8;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
+
+img {
+  max-width: 300px; /* Adjust the image size */
+  margin-top: 2rem;
+  border-radius: 5px;
+  z-index: 8; 
+}
